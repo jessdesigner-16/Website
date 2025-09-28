@@ -92,9 +92,16 @@ nav ul li a:hover {
   position: relative;
   margin-top: 30px;
 }
+.scroll-content:hover {
+  animation-play-state: paused;
+}
+/* Make sure touch events are handled correctly on touch screens */
 .scroll-content {
+  touch-action: pan-y; /* Allows vertical scrolling if needed */
+  -webkit-overflow-scrolling: touch; /* Improves scrolling on iOS devices */
   display: flex;
-  animation: scroll 40s linear infinite;
+  width: max-content;
+  animation: scroll 20s linear infinite; /* Re-enable the infinite animation */
 }
 .work-item {
   position: relative;
@@ -237,5 +244,9 @@ footer {
 .lightbox-controls span:hover {
   color: #d6336c;
 }
-
+@media (max-width: 768px) {
+  .hero {
+    background-image: url("https://i.ibb.co/HpTHdkFd/hero-image-jess-website.png");
+  }
+}
 /*
