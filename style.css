@@ -101,7 +101,7 @@ nav ul li a:hover {
   -webkit-overflow-scrolling: touch; /* Improves scrolling on iOS devices */
   display: flex;
   width: max-content;
-  animation: scroll 30s linear infinite; /* Re-enable the infinite animation */
+  animation: scroll 20s linear infinite; /* Re-enable the infinite animation */
 }
 .work-item {
   position: relative;
